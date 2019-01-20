@@ -1,0 +1,13 @@
+<button class="btn" ui-sref="service.new">Create New Service</button>
+<section data-ng-repeat="service in $ctrl.services" id="{{service.id}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <a ui-sref="service.edit({id: service.id})">
+                    <h2>{{service.heading}}</h2>
+                </a>
+                <p class="lead">{{service.text}}</p>
+            </div>
+        </div>
+    </div>
+</section>

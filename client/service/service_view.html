@@ -1,0 +1,22 @@
+SINGLE SERVICE
+
+<section ng-show="$ctrl.state === 'new'">
+    <div class=" container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                FORM FOR CREATING NEW SERVICE GOES HERE
+            </div>
+        </div>
+    </div>
+</section>
+
+<section ng-show="$ctrl.state === 'edit'">
+    <div class=" container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                FORM FOR EDITING SERVICE: {{$ctrl.id}} GOES HERE
+                {{$ctrl.service}}
+            </div>
+        </div>
+    </div>
+</section>

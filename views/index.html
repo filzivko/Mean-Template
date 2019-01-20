@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My App</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/scrolling-nav.css">
+</head>
+
+<body id="page-top" ng-app="app">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Demo App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a ui-sref="service.index" class="nav-link js-scroll-trigger">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <app>
+    <span class="loader">Loading...</span>
+  </app>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+  </footer>
+
+
+  <!-- SCRIPTS -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+
+  <!-- Custom JavaScript -->
+  <!-- app -->
+  <script src="./client/app_module.js"></script>
+  <script src="./client/app_component.js"></script>
+  <!-- <script src="./client/app/sectionList.js"></script> -->
+  <!-- service -->
+  <script src="./client/service/service_config.js"></script>
+  <script src="./client/service/services_component.js"></script>
+  <script src="./client/service/service_component.js"></script>
+
+</body>
+
+</html>
