@@ -11,8 +11,10 @@ angular.module('app').component('services', {
         };
 
         function loadServicesData() {
-            $http.get('/api/services').then(function (res) {
-                $ctrl.services = res.data;
+            $http.get('/api/services').then(function (resp) {
+                $ctrl.services = resp.data;
+            }, function (err) {
+                conseol.log('There ');
             });
         }
     }]
